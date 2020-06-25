@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="imageproc" xd:componentRef="imageproc" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="image_in[]" xd:originalName="image_in" xd:direction="inout" xd:interfaceRef="m_axi_INPUT_r" xd:busTypeRef="aximm" xd:arraySize="120000" xd:dataWidth="32" xd:bufferDirection="in"/>
+  <xd:arg xd:name="image_out[]" xd:originalName="image_out" xd:direction="inout" xd:interfaceRef="m_axi_OUTPUT_r" xd:busTypeRef="aximm" xd:arraySize="120000" xd:dataWidth="32" xd:bufferDirection="out"/>
+  <xd:arg xd:name="image_in" xd:originalName="image_in" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_INPUT_r" xd:dataWidth="32" xd:offset="0x10" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="image_out" xd:originalName="image_out" xd:direction="in" xd:interfaceRef="s_axi_CTRL" xd:busTypeRef="axilite" xd:aximmInterfaceRef="m_axi_OUTPUT_r" xd:dataWidth="32" xd:offset="0x18" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="2930" xd:FF="2054" xd:BRAM="132" xd:DSP="3"/>
+</xd:acceleratorMap>
